@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ja" class="build-menu-close">
+
+<head>
+    <meta charset="utf-8">
+    <title>プロジェクト一覧 | Ha4go</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" title="Kanazawa Matchbako Project List" href="/feed.rss" />
+    <link rel="stylesheet" media="all"
+        href="/assets/application-e09b66bb8f92f582e5f54fd58c4de5b10a5f5d0b1300f84d62e9abec7c4bf440.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token"
+        content="NmiiU9Uvd2AXrsluXl5Qfw6e/cYe4wLcWOJnsjFOE6wm+0qUpVP0Z1cfdDdko1wqNxqy4c0TaMUGkcL7qeBaLg==" />
+    <meta name="description" content="課題を深く知る市民とシビックテックの情報交換サイト、はじめました。">
+    <meta property="og:title" content="Ha4go">
+    <meta property="og:site_name" content="Ha4go">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kanazawa.ha4go.net/projects">
+    <meta property="og:description" content="課題を深く知る市民とシビックテックの情報交換サイト、はじめました。">
+    <meta property="og:locale" content="ja_jp">
+    <meta property="og:image"
+        content="https://kanazawa.ha4go.net/assets/ha4go_icon-868fea39179922544b5e25d3b9b989bdd8f2252bf92dd96c993e300e906f5d1c.png">
+
+
+</head>
+
+<body>
+    <div class="all">
+        <header id="pc_header">
+            <section class="container clearfix">
+                <div class="header_left">
+                    <h1><a href="/">Code for Kanazawa</a></h1>
+                </div>
+                <div class="header_center">
+                    <h2><a href="/"><img
+                                src="/assets/matsu/logo-c85b4f1360d2dad673ca1b7bbb68ece761089c69fa4bcd861500fcb499ed0a71.png" /></a>
+                    </h2>
+                </div>
+                <div class="header_right">
+                    <div class="header_nav">
+                        <ul id="first_ul" class="drop_nav">
+                            <li class="nav-child">
+                                <a href="#"><img
+                                        src="/assets/matsu/header_item3-d30d50ceaa61e29ece1a1a4b57b92bbed2f9791eaf15e9dc6ec1252b2cd2d0f6.png" /></a>
+                                <!--プルダウンメニュー-->
+                                <ul class="sub_nav">
+                                    <li><a href="/dashboard">ダッシュボード</a></li>
+                                    <li><a href="/users/404">マイページ</a></li>
+                                    <li><a id="sign_out" href="/signout">サインアウト</a></li>
+                                    <li><a href="/projects/new">課題を投稿する</a></li>
+                                    <li><a href="/users">メンバー</a></li>
+                                    <li><a href="https://kanazawa.ha4go.net/doc/privacy-policy.pdf">プライバシーポリシー</a></li>
+                                    <li><a href="https://kanazawa.ha4go.net/doc/terms-of-service.pdf">利用規約</a></li>
+                                    <li><a href="https://kanazawa.ha4go.net/doc/what-is-this.pdf">「マッチ箱」でできること</a></li>
+                                </ul>
+                                <!--プルダウンメニューここまで-->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user_name">yoshiyuki kurose</div>
+                    <div class="login_after">
+                        <span class="login_thum"><img
+                                src="https://lh3.googleusercontent.com/a/AAcHTtd1x9vHaa7DTSpFCAAzsIJ5zm4SG6P_z7oImqfo=s96-c" /></span>
+                    </div>
+                    <div class="post_content">
+                        <a href="/projects/new"><img
+                                src="/assets/matsu/header_item1-a505645717f782e002522f00abc7b8c606ee5fa02ec08e3469cd9724223ff388.png" /></a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!--スマートフォン用ヘッダーここから-->
+        <header id="sp_header">
+            <section class="container clearfix">
+                <div class="sp_header_title"><a href="/">Code for Kanazawa</a></div>
+                <div class="sp_header_logo">
+                    <h2><a href="/"><img
+                                src="/assets/matsu/logo-c85b4f1360d2dad673ca1b7bbb68ece761089c69fa4bcd861500fcb499ed0a71.png" /></a>
+                    </h2>
+                </div>
+                <div class="sp_header_nav">
+                    <nav id="mobile-bar"></nav>
+                    <nav id="sp_nav">
+                        <ul>
+                            <li class="li_sub">
+                                <a class="btn btn-default btn-primary" href="/projects/new">課題を投稿する</a>
+
+                            </li>
+                            <li class="li_sub">
+                                <a href="/dashboard">ダッシュボード</a>
+                            </li>
+                            <li class="li_sub">
+                                <a href="/users/404">マイページ</a>
+                            </li>
+                            <li class="li_sub">
+                                <a id="sign_out" href="/signout">サインアウト</a>
+                            </li>
+                            <li class="li_sub"><a href="/users">メンバー</a></li>
+                            <li class="li_sub"><a
+                                    href="https://kanazawa.ha4go.net/doc/privacy-policy.pdf">プライバシーポリシー</a></li>
+                            <li class="li_sub"><a href="https://kanazawa.ha4go.net/doc/terms-of-service.pdf">利用規約</a>
+                            </li>
+                            <li class="li_sub"><a
+                                    href="https://kanazawa.ha4go.net/doc/what-is-this.pdf">「マッチ箱」でできること</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <!--スマートフォン用ヘッダーここまで-->
+        <!--コンテンツ-->
+        <div id="wrapper">
+            <article>
+                <div class="container clearfix">
+
+
+                    <div class="content">
+                        <div class="list_title">全ての課題</div>
+
+                        <div class="content_inner">
+                            <div class="content_header clearfix">
+                                <div class="content_title"><a href="/projects/64">地下道をもっと有効活用ができないのか？</a></div>
+                                <div class="content_member"><a href="/users/274"><img alt="nakata DW" title="nakata DW"
+                                            src="https://lh3.googleusercontent.com/a/AAcHTtfqRSp5TXIAc4oDaVBIvGlrIXGHZ3CjCx3Qvx1O=s96-c" /></a>
+                                </div>
+                                <div class="content_time">
+                                    <a href="/users/274">nakata DW</a><br />
+                                    <span title="2023-05-31 17:57:53 +0900">27日前</span>
+                                </div>
+                            </div>
+                            <div class="content_box">
+                                テスト配信：地下道はなんとなく暗い、危ないというイメージがあり利用者が少ない。地下道のイメージアップができると児童の通学路にもなり地上での交通安全対策に繋がると思われる。
+                            </div>
+
+                            <!-- SNS SHARE -->
+                            <div class="content_sns_share clearfix">
+                                <div class="content_sns_share_left">
+                                    SNSシェア
+                                </div>
+                                <div class="content_sns_share_right">
+                                    <a class="twitter-share-button" href="/projects/64" data-dnt="true">Tweet</a>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+
+                            <!-- 開発URL -->
+
+                            <!-- ステータス -->
+                            <div class="content_status clearfix">
+                                <div class="content_status_left">ステータス</div>
+                                <div class="content_status_right"><a target="_blank" href="/projects">議論と調査</a></div>
+                            </div>
+
+                            <!-- 元の課題 -->
+
+                            <!-- 関連課題(子) -->
+
+                            <!-- 募集スキル -->
+                            <div class="content_skill clearfix">
+                                <div class="content_status_left">募集スキル</div>
+                                <div class="content_status_right">
+                                    <a href="/users?skill_id=114">
+                                        <span class="skill_web">デザイン</span>
+                                    </a> <a href="/users?skill_id=144">
+                                        <span class="skill_web">子育て</span>
+                                    </a> <a href="/users?skill_id=154">
+                                        <span class="skill_web">教育</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 参加者 -->
+                            <div class="content_join clearfix">
+                                <div class="content_join_left">参加者一覧</div>
+                                <div class="content_join_right">
+                                    <span class="join_thum"><a href="/users/274"><img alt="nakata DW" title="nakata DW"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtfqRSp5TXIAc4oDaVBIvGlrIXGHZ3CjCx3Qvx1O=s96-c" /></a></span>
+                                    <span class="join_thum"><a href="/users/224"><img alt="神田現" title="神田現"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtdSdBLx3N2hyoYC9I95HQcWkKOcPPnOQiGA7S_W=s96-c" /></a></span>
+                                    <span class="join_thum"><a href="/users/214"><img alt="福島健一郎" title="福島健一郎"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtcgDNfUq2R-k9FjFZCZkOh19jFFdQqv4wZBHbi-=s96-c" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content_inner">
+                            <div class="content_header clearfix">
+                                <div class="content_title"><a href="/projects/74">旅ぱすぽーと</a></div>
+                                <div class="content_member"><a href="/users/294"><img alt="Y T" title="Y T"
+                                            src="https://lh3.googleusercontent.com/a/AAcHTtci0lbotFhJul3nLKCqkwYu6AwuMYm9dsWSiP3fgnY=s96-c" /></a>
+                                </div>
+                                <div class="content_time">
+                                    <a href="/users/294">Y T</a><br />
+                                    <span title="2023-06-02 10:21:55 +0900">25日前</span>
+                                </div>
+                            </div>
+                            <div class="content_box">
+                                冊子とアプリで展開しているが、使いづらい。<br />クーポンがあまり使えないと実際に旅行に来たから直接感想いただきました。<br /><br />クーポンの内容の見直しは北陸新幹線の福井延伸までに見直した方がいいかもしれないです。<br /><br />
+                            </div>
+
+                            <!-- SNS SHARE -->
+                            <div class="content_sns_share clearfix">
+                                <div class="content_sns_share_left">
+                                    SNSシェア
+                                </div>
+                                <div class="content_sns_share_right">
+                                    <a class="twitter-share-button" href="/projects/74" data-dnt="true">Tweet</a>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+                            <div class="content_development_url clearfix">
+                                <div class="content_development_url_left">URL</div>
+                                <div class="content_development_url_right">
+                                    <a href="https://tabipass-plus.com/#home">https://tabipass-plus.com/#home</a>
+                                </div>
+                            </div>
+
+                            <!-- 開発URL -->
+
+                            <!-- ステータス -->
+                            <div class="content_status clearfix">
+                                <div class="content_status_left">ステータス</div>
+                                <div class="content_status_right"><a target="_blank" href="/projects">議論と調査</a></div>
+                            </div>
+
+                            <!-- 元の課題 -->
+
+                            <!-- 関連課題(子) -->
+
+                            <!-- 募集スキル -->
+                            <div class="content_skill clearfix">
+                                <div class="content_status_left">募集スキル</div>
+                                <div class="content_status_right">
+                                    <a href="/users?skill_id=174">
+                                        <span class="skill_web">観光</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 参加者 -->
+                            <div class="content_join clearfix">
+                                <div class="content_join_left">参加者一覧</div>
+                                <div class="content_join_right">
+                                    <span class="join_thum"><a href="/users/294"><img alt="Y T" title="Y T"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtci0lbotFhJul3nLKCqkwYu6AwuMYm9dsWSiP3fgnY=s96-c" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content_inner">
+                            <div class="content_header clearfix">
+                                <div class="content_title"><a href="/projects/84">何ゴミなのかわからない</a></div>
+                                <div class="content_member"><a href="/users/284"><img alt="山口いづみ" title="山口いづみ"
+                                            src="https://lh3.googleusercontent.com/a/AAcHTtfSXb2CWqzplddzrywQA15KBP5h8ikDtHI5Pa0v=s96-c" /></a>
+                                </div>
+                                <div class="content_time">
+                                    <a href="/users/284">山口いづみ</a><br />
+                                    <span title="2023-06-02 20:46:33 +0900">25日前</span>
+                                </div>
+                            </div>
+                            <div class="content_box">
+                                これは何ゴミなのか？？？と分別が分からなくなる時があります。<br />金沢市のゴミの出し方の冊子はよくできていて分かりやすいのですが、冊子が手元にない時もあるし、冊子では分からない場合もあります。その時は、申し訳ないなあと思いながらも市役所に電話で問い合わせたりしています。<br /><br />◇今まで分からなかった例<br />長靴、傘、ファンヒーター、農業用支柱、ダウンジャケット
+                                など
+                            </div>
+
+                            <!-- SNS SHARE -->
+                            <div class="content_sns_share clearfix">
+                                <div class="content_sns_share_left">
+                                    SNSシェア
+                                </div>
+                                <div class="content_sns_share_right">
+                                    <a class="twitter-share-button" href="/projects/84" data-dnt="true">Tweet</a>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+
+                            <!-- 開発URL -->
+
+                            <!-- ステータス -->
+                            <div class="content_status clearfix">
+                                <div class="content_status_left">ステータス</div>
+                                <div class="content_status_right"><a target="_blank" href="/projects">議論と調査</a></div>
+                            </div>
+
+                            <!-- 元の課題 -->
+
+                            <!-- 関連課題(子) -->
+
+                            <!-- 募集スキル -->
+                            <div class="content_skill clearfix">
+                                <div class="content_status_left">募集スキル</div>
+                                <div class="content_status_right">
+                                    <a href="/users?skill_id=104">
+                                        <span class="skill_web">プログラミング</span>
+                                    </a> <a href="/users?skill_id=114">
+                                        <span class="skill_web">デザイン</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 参加者 -->
+                            <div class="content_join clearfix">
+                                <div class="content_join_left">参加者一覧</div>
+                                <div class="content_join_right">
+                                    <span class="join_thum"><a href="/users/284"><img alt="山口いづみ" title="山口いづみ"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtfSXb2CWqzplddzrywQA15KBP5h8ikDtHI5Pa0v=s96-c" /></a></span>
+                                    <span class="join_thum"><a href="/users/224"><img alt="神田現" title="神田現"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtdSdBLx3N2hyoYC9I95HQcWkKOcPPnOQiGA7S_W=s96-c" /></a></span>
+                                    <span class="join_thum"><a href="/users/394"><img alt="Okada Atsunori"
+                                                title="Okada Atsunori"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTte3VVfD-grHv1OY_erifn061-jSGOjkE7xV3SIA=s96-c" /></a></span>
+                                    <span class="join_thum"><a href="/users/214"><img alt="福島健一郎" title="福島健一郎"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtcgDNfUq2R-k9FjFZCZkOh19jFFdQqv4wZBHbi-=s96-c" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content_inner">
+                            <div class="content_header clearfix">
+                                <div class="content_title"><a href="/projects/94">野田山墓地で迷子になる</a></div>
+                                <div class="content_member"><a href="/users/364"><img alt="G K" title="G K"
+                                            src="https://lh3.googleusercontent.com/a/AAcHTtet92TwP8RTiXcjX5aKg4ubQDKFIGuVyHdDpMN5=s96-c" /></a>
+                                </div>
+                                <div class="content_time">
+                                    <a href="/users/364">G K</a><br />
+                                    <span title="2023-06-09 21:21:39 +0900">18日前</span>
+                                </div>
+                            </div>
+                            <div class="content_box">
+                                金沢の野田山墓地周辺は、７月がお盆の時期になるのですが、毎年混雑します。<br />特に、県外からお墓参りに来た方などが、自分の先祖等のお墓の場所がわからなくて迷子になるという話をよく聞きます。<br /><br />野田山墓地は大体エリア分けされているのですが、県外から来た馴染みがない方にはわかりにくく、スマートフォン等を使って上手く案内できないかと考えています。<br />・
+                            </div>
+
+                            <!-- SNS SHARE -->
+                            <div class="content_sns_share clearfix">
+                                <div class="content_sns_share_left">
+                                    SNSシェア
+                                </div>
+                                <div class="content_sns_share_right">
+                                    <a class="twitter-share-button" href="/projects/94" data-dnt="true">Tweet</a>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+
+                            <!-- 開発URL -->
+
+                            <!-- ステータス -->
+                            <div class="content_status clearfix">
+                                <div class="content_status_left">ステータス</div>
+                                <div class="content_status_right"><a target="_blank" href="/projects">議論と調査</a></div>
+                            </div>
+
+                            <!-- 元の課題 -->
+
+                            <!-- 関連課題(子) -->
+
+                            <!-- 募集スキル -->
+                            <div class="content_skill clearfix">
+                                <div class="content_status_left">募集スキル</div>
+                                <div class="content_status_right">
+                                    <a href="/users?skill_id=104">
+                                        <span class="skill_web">プログラミング</span>
+                                    </a> <a href="/users?skill_id=174">
+                                        <span class="skill_web">観光</span>
+                                    </a> <a href="/users?skill_id=184">
+                                        <span class="skill_web">まちづくり</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 参加者 -->
+                            <div class="content_join clearfix">
+                                <div class="content_join_left">参加者一覧</div>
+                                <div class="content_join_right">
+                                    <span class="join_thum"><a href="/users/364"><img alt="G K" title="G K"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtet92TwP8RTiXcjX5aKg4ubQDKFIGuVyHdDpMN5=s96-c" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content_inner">
+                            <div class="content_header clearfix">
+                                <div class="content_title"><a href="/projects/104">いしかわ百万石文化祭2023について</a></div>
+                                <div class="content_member"><a href="/users/294"><img alt="Y T" title="Y T"
+                                            src="https://lh3.googleusercontent.com/a/AAcHTtci0lbotFhJul3nLKCqkwYu6AwuMYm9dsWSiP3fgnY=s96-c" /></a>
+                                </div>
+                                <div class="content_time">
+                                    <a href="/users/294">Y T</a><br />
+                                    <span title="2023-06-27 09:49:11 +0900">約11時間前</span>
+                                </div>
+                            </div>
+                            <div class="content_box">
+                                いしかわ百万石文化祭2023が10月14日～11月26日まで開催されます。<br /><br />広報のボランティアを募集していて、応募してみたのですが、<br />うまく活用できてないな、というのが印象でした。<br /><br />広報に名乗り出た方には、<br />概要を含めたチラシはいただいたのですが、<br />期間も長いし、イベントも多岐に渡るので、<br />スケジュール一覧も送っていただけたらもっと興味出てきたのかなと。<br /><br />広報の方法もそれぞれよろしくという形だったので、<br />SNS上でも数人、核になる人を置いて、<br />その人から主要なイベントの発信をして、<br />広報メンバーに拾ってもらうような仕組みは<br />これからは必要なのかもしれません。<br /><br />ハッシュタグは<br />#百文祭
+                                #hyakubunsei<br />を付けてねと案内がありましたが、<br />#いしかわ百万石文化祭2023　<br />を入れた方が、略すよりいしかわというキーワードが入っているので、<br />目に留まりやすいというのが、印象でした。<br /><br />今からでもできることはたくさんあるので、<br />もっと盛り上がるといいなと思います。
+                            </div>
+
+                            <!-- SNS SHARE -->
+                            <div class="content_sns_share clearfix">
+                                <div class="content_sns_share_left">
+                                    SNSシェア
+                                </div>
+                                <div class="content_sns_share_right">
+                                    <a class="twitter-share-button" href="/projects/104" data-dnt="true">Tweet</a>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+                            <div class="content_development_url clearfix">
+                                <div class="content_development_url_left">URL</div>
+                                <div class="content_development_url_right">
+                                    <a href="https://ishikawa-bunkasai2023.jp/">https://ishikawa-bunkasai2023.jp/</a>
+                                </div>
+                            </div>
+
+                            <!-- 開発URL -->
+
+                            <!-- ステータス -->
+                            <div class="content_status clearfix">
+                                <div class="content_status_left">ステータス</div>
+                                <div class="content_status_right"><a target="_blank" href="/projects">議論と調査</a></div>
+                            </div>
+
+                            <!-- 元の課題 -->
+
+                            <!-- 関連課題(子) -->
+
+                            <!-- 募集スキル -->
+                            <div class="content_skill clearfix">
+                                <div class="content_status_left">募集スキル</div>
+                                <div class="content_status_right">
+                                    <a href="/users?skill_id=174">
+                                        <span class="skill_web">観光</span>
+                                    </a> <a href="/users?skill_id=384">
+                                        <span class="skill_web">イベント</span>
+                                    </a> <a href="/users?skill_id=394">
+                                        <span class="skill_web">広報</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 参加者 -->
+                            <div class="content_join clearfix">
+                                <div class="content_join_left">参加者一覧</div>
+                                <div class="content_join_right">
+                                    <span class="join_thum"><a href="/users/294"><img alt="Y T" title="Y T"
+                                                src="https://lh3.googleusercontent.com/a/AAcHTtci0lbotFhJul3nLKCqkwYu6AwuMYm9dsWSiP3fgnY=s96-c" /></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <div class="menu">
+                        <div class="clearfix">
+                            <section class="menu_search">
+                                <h1>課題の検索</h1>
+                            </section>
+                            <div class="menu01">
+                                <a href="/projects?order=desc&amp;type=recent">最新の課題</a>
+                            </div>
+                            <div class="menu02">
+                                5
+                            </div>
+
+                            <div class="menu01">
+                                <a href="/projects?type=hotrank">話題になっている課題</a>
+                            </div>
+                            <div class="menu02">
+                                0
+                            </div>
+
+                            <div class="menu01">
+                                <a href="/projects?type=match">自分のスキルとマッチする課題</a>
+                            </div>
+                            <div class="menu02">
+                                0
+                            </div>
+
+                            <div class="menu01">
+                                <a href="/projects">全ての課題</a>
+                            </div>
+                            <div class="menu02">
+                                5
+                            </div>
+                        </div>
+                        <div class="menu_post">
+                            <a href="/projects/new"><img
+                                    src="/assets/matsu/menu_item01-fcb154a9da102b2363a073261935b57f8e692300d36ea078302dcfe9a8b1e458.png" /></a>
+                        </div>
+
+                        <div class="clearfix">
+                            <section class="menu_user_search">
+                                <h1>メンバーの検索</h1>
+                            </section>
+                            <div class="menu01">
+                                <a href="/users">全てのメンバー</a>
+                            </div>
+                            <div class="menu02">
+                                25
+                            </div>
+
+                            <div class="menu01">
+                                <a href="/users?skill_id=104">プログラミング</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=124">プロジェクト管理</a>
+                            </div>
+                            <div class="menu02">
+                                3
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=134">防災</a>
+                            </div>
+                            <div class="menu02">
+                                3
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=144">子育て</a>
+                            </div>
+                            <div class="menu02">
+                                4
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=154">教育</a>
+                            </div>
+                            <div class="menu02">
+                                3
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=164">介護</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=174">観光</a>
+                            </div>
+                            <div class="menu02">
+                                3
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=184">まちづくり</a>
+                            </div>
+                            <div class="menu02">
+                                3
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=224">オープンダイアローグ</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=234">コミュニケーションワーク</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=244">メンタルケア</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=254">ストレスマネジメント</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=264">心理支援</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=274">カウンセリング</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=284">コーチング</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=294">コンサルテーション</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=304">SNS相談</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=314">SNSカウンセリング</a>
+                            </div>
+                            <div class="menu02">
+                                2
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=324">オンラインカウンセリング</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=334">障害福祉</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=364">研究開発　設備導入</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                            <div class="menu01">
+                                <a href="/users?skill_id=374">データ分析</a>
+                            </div>
+                            <div class="menu02">
+                                1
+                            </div>
+                        </div>
+
+                        <section class="menu_news">
+                            <h1>運営事務局からのお知らせ</h1>
+                            <dl>
+                                <dt>2023-05-25</dt>
+                                <dd>試行運用を開始しました</dd>
+                            </dl>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--コンテンツ-->
+
+        <footer>
+            <div class="container clearfix">
+            </div>
+        </footer>
+        <div class="copyright">
+            <a href="https://kanazawa.ha4go.net/doc/privacy-policy.pdf">プライバシーポリシー</a> -
+            <a href="https://kanazawa.ha4go.net/doc/terms-of-service.pdf">利用規約</a> -
+            <a href="https://kanazawa.ha4go.net/doc/what-is-this.pdf">「マッチ箱」でできること</a>
+            <br />
+            copyright(c) 2016 Code for Kanazawa ( Ha4go ) All Right Reserved.
+        </div>
+    </div>
+
+    <script src="/assets/application-4b8d4d948848339785e741fbf0d0c85b491c3f67130f720703efe5da73ca119f.js"></script>
+    <script src="/assets/jquery-c731c20e2995c576b0509d3bd776f7ab64a66b95363a3b5fae9864299ee594ed.js"></script>
+    <script src="/assets/bootstrap-610902f8209705bd1f050724f6b27ed77bc9a8c528c48ce7cc34ba9c3e89f0f9.js"></script>
+    <script src="/assets/jquery_ujs-cebd2682a114ed825f176eaba992eddff7eefb97a705a5832030b48277287e1e.js"></script>
+    <script
+        src="/assets/matsu/jquery.mobile-menu-fb23532739d89c5f6fcf3d304abd0e6d41db088d6598a6ed32fe131732e5cdc1.js"></script>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+        window.twttr = (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function (f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs"));
+    </script>
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga("create", "UA-xxxxxx-x", "auto");
+        ga("send", "pageview");
+    </script>
+
+    <script>
+        $(function () {
+            $("body").mobile_menu({
+                menu: ['#sp_nav ul'],
+                menu_width: 260,
+                prepend_button_to: '#mobile-bar',
+                button_content: '<img src="/assets/matsu/nav-1eafd41b5c34febcdb2eddda2be535f7195711f8f0484659407cb2ef9c590c52.gif" width="20px">'
+            });
+        });
+    </script>
+</body>
+
+</html>
